@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <!-- cloud -->
+  <path d="M70 196 C38 196 16 174 16 146 C16 120 35 100 60 97 C66 64 94 40 128 40 C161 40 188 62 196 93 C223 95 240 117 240 144 C240 173 217 196 188 196 Z" fill="url(#g)"/>
+  <!-- outlet face -->
+  <rect x="84" y="94" width="88" height="80" rx="22" fill="#0f172a"/>
+  <rect x="104" y="112" width="11" height="26" rx="5.5" fill="#e2e8f0"/>
+  <rect x="141" y="112" width="11" height="26" rx="5.5" fill="#e2e8f0"/>
+  <path d="M119 158 a9 9 0 0 1 18 0 v6 h-18 z" fill="#e2e8f0"/>
+  <!-- local signal -->
+  <circle cx="206" cy="202" r="7" fill="#22c55e"/>
+  <path d="M190 214 a22 22 0 0 1 0 -24" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M222 190 a22 22 0 0 1 0 24" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+</svg>

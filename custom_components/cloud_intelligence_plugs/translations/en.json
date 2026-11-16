@@ -1,0 +1,46 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a Cloud Intelligence plug",
+        "description": "Enter the plug's local keys (from the Cloud Intelligence app traffic). Leave IP address blank to find it automatically.",
+        "data": {
+          "name": "Name",
+          "device_name": "Device name (12-character ID, e.g. a1b2c3d4e5f6)",
+          "access_key": "Access key",
+          "access_token": "Access token",
+          "host": "IP address (optional)",
+          "product_key": "Product key"
+        }
+      },
+      "reauth_confirm": {
+        "title": "New keys for {name}",
+        "description": "The plug rejected its keys (it was probably re-paired in the app). Enter the new access key and token.",
+        "data": {
+          "access_key": "Access key",
+          "access_token": "Access token"
+        }
+      }
+    },
+    "error": {
+      "not_found": "No plug with that device name answered on the network. Enter its IP address.",
+      "cannot_connect": "The plug didn't answer. Check the IP address and that it's online.",
+      "invalid_auth": "The plug rejected the access key or token.",
+      "unknown": "The plug answered but something went wrong. Check the logs."
+    },
+    "abort": {
+      "already_configured": "This plug is already added.",
+      "reauth_successful": "Keys updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Plug options",
+        "data": {
+          "scan_interval": "How often to check the plug's state (seconds)"
+        }
+      }
+    }
+  }
+}

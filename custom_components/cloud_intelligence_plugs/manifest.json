@@ -1,0 +1,12 @@
+{
+  "domain": "cloud_intelligence_plugs",
+  "name": "Cloud Intelligence Plugs",
+  "codeowners": ["@jonathangibson98"],
+  "config_flow": true,
+  "documentation": "https://github.com/jonathangibson98/ha-cloud-intelligence-plugs",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/jonathangibson98/ha-cloud-intelligence-plugs/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
