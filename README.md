@@ -50,7 +50,22 @@ Copy `custom_components/cloud_intelligence_plugs` into your HA `config/custom_co
 
 ## 🔑 Getting your plug's keys
 
-The app downloads each plug's local keys from Alibaba's cloud when it opens. You grab them once by watching the app's traffic with [mitmproxy](https://mitmproxy.org/):
+The app downloads each plug's local keys from Alibaba's cloud when it opens. You grab them once by watching the app's traffic.
+
+### Quick way: the key capture helper
+
+On any Linux machine on your network that has Docker:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/jonathangibson98/ha-cloud-intelligence-plugs/main/tools/key_capture/run.sh -o run.sh
+bash run.sh
+```
+
+It prints the phone setup steps, then waits. Open Cloud Intelligence on your phone and tap into each plug. Each plug's **Device name**, **Access key**, **Access token** and **Product key** appear in the terminal, ready to paste into Home Assistant. Nothing is saved to disk. Press **Ctrl+C** when you're done, then turn your phone's proxy off and delete the certificate profile.
+
+### Manual way
+
+If you'd rather use [mitmproxy](https://mitmproxy.org/) yourself:
 
 1. **Run mitmproxy** on any computer on your network:
    ```bash
